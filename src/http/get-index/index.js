@@ -17,8 +17,7 @@ let body = `
   <body>
 
     <h1 class="center-text">
-      <!-- ↓ Change "Hello world!" to something else and head on back to Begin! -->
-      Hello world!
+      Hello Begin
     </h1>
 
     <p class="center-text">
@@ -33,10 +32,10 @@ exports.handler = async function http(req) {
   return {
     headers: {
       'content-type': 'text/html; charset=utf8',
-      'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0'
+      'cache-control': 'public, max-age=31536000',
     },
     statusCode: 200,
-    body
+    body,
   }
 }
 

@@ -17,7 +17,7 @@ let body = `
   <body>
 
     <h1 class="center-text">
-      Hello Begin
+      Hello
     </h1>
 
     <p class="center-text">
